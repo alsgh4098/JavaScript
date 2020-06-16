@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<p>알림 후</p>
+	<script>
+		function sayHi() {
+			phrase = "Hello"; // (*)
+
+			if (false) {
+				var phrase;
+			}
+
+			alert(phrase);
+		}
+		sayHi();
+
+		function sayHi2() {
+			var phrase;
+
+			phrase = "Hello2";
+
+			alert(phrase);
+		}
+		sayHi2();
+	</script>
+	<p>알림 전</p>
+</body>
+</html>
