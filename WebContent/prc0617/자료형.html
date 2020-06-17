@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		alert( 1 / 0 ); // 무한대
+		
+		alert( "숫자가 아님" / 2 + 5 ); // NaN
+		
+		let name = "John"; // 변수를 문자열 중간에 삽입
+		alert( `Hello, ${name}!` ); // Hello, John!
+		
+		
+/* 		자바스크립트의 null은 자바스크립트 이외 언어의 null과 성격이 다릅니다. 다른 언어에선 null을 '존재하지 않는 객체에 대한 참조’나 '널 포인터(null pointer)'를 나타낼 때 사용합니다.
+
+		하지만 자바스크립트에선 null을 ‘존재하지 않는(nothing)’ 값, ‘비어 있는(empty)’ 값, ‘알 수 없는(unknown)’ 값을 나타내는 데 사용합니다. */
+
+		let age = null;
+		//은 나이(age)를 알 수 없거나 그 값이 비어있음을 보여줍니다.
+		
+		console.log(typeof undefined)
+		console.log(typeof 10n)
+		console.log(typeof true)
+		console.log(typeof "foo")
+		console.log(typeof Symbol("id"))
+		console.log(typeof Math)
+		console.log(typeof null)
+		console.log(typeof alert)
+		
+	</script>
+</body>
+</html>
