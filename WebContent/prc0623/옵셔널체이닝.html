@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		let user = null;
+		
+// 		console.log( user.address ); error typeError
+// 		?.의 의미는 접근하려는 객체에 .뒤 요소가 있다면을 의미한다.
+		
+		console.log( user?.address );
+		
+		console.log( user?.address.street );
+		console.log( user?.address.street.anything );
+		
+		let user1 = {
+			firstName: "Violet"
+		}
+		
+		let user2 = {
+			
+		}
+		
+		let key = "firstName";
+		
+		console.log( user1?.[key] );
+		
+		console.log( user2?.[key] );
+		</script>
+</body>
+</html>

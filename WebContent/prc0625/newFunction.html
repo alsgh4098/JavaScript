@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+	
+		function getFunc(){
+			
+			let value = "test";
+			
+			let func = function(){ alert(value) };
+			
+			return func;
+		}	
+		
+		getFunc()();
+		
+		function getFunc2(){
+			
+			let value = "test";
+			
+			let func = new Function( 'alert(value)' );
+			
+			return func;
+		}	
+		
+		getFunc2()();
+	
+	</script>
+</body>
+</html>

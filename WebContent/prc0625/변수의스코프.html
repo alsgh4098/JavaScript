@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+	
+		//중첩함수
+		function sayHiBye(firstName, lastName){
+			
+			function getFullName(){
+				return firstName + " " + lastName;
+			}
+			
+			alert( "Hello, " + getFullName() );
+			alert( "Bye, " + getFullName() );
+			
+			
+			let phrase = "Hello";
+			
+			function say(name){
+				alert( `${phrase},${name}` );
+			}
+			
+			say("John");
+			
+			// 클로저 함수.
+			
+			function f(){
+				let value = 123;
+				
+				return function(){
+					alert(value);
+				}
+				
+			}
+			
+			let g = f(); // g가 살아있는 동안엔 연관 렉시컬 환경도 메모리에 살아있습니다.
+			
+			g = null; // 도달할 수 없는 상태가 되었으므로 메모리에서 삭제됩니다.
+			
+			
+		}
+		
+	</script>
+</body>
+</html>

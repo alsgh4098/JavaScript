@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		let user = {
+			name: "John",
+			age: 30,
+			
+			toString(){
+				return `{name: "${this.name}", age: ${this.age} }`;
+			}
+		};
+		
+		console.log( user );
+		
+		console.log({name: "John", age: 30 })
+		
+		let student = {
+			name: 'john',
+			age: 30,
+			isAdmin: false,
+			course: ['html','css','js'],
+			wife: null
+		};
+		
+		let json = JSON.stringify(student);
+		
+		console.log(typeof json);
+		console.log(json + "json");
+		console.log(student + "obejct");
+		
+		let object = JSON.parse(json);
+		
+		console.log(object + "parse");
+		
+		console.log(JSON.stringify(student,['name','age']));
+	</script>
+	
+	
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		let user1 = new Object();
+		let user2 = {};
+		
+		let user3 = {
+			name : "john",
+			age : 30
+		};
+		
+		console.log(user3.name);
+		console.log(user3.age);
+		
+		let user4 = {
+			name : 'jin',
+			age : 28
+		}
+		
+		console.log(user4.name);
+		
+		delete(user4.name);
+		
+		console.log(user4.name);
+		
+/* 		키가 유효한 변수 식별자가 아닌 경우엔 점 표기법 대신에 '대괄호 표기법(square bracket notation)'
+		이라 불리는 방법을 사용할 수 있습니다. 
+		대괄호 표기법은 키에 어떤 문자열이 있던지 상관없이 동작합니다. */
+		
+		let user = { name: "John" };
+
+		let permissions1 = { canView: true };
+		let permissions2 = { canEdit: true };
+
+		// permissions1과 permissions2의 프로퍼티를 user로 복사합니다.
+		Object.assign(user, permissions1, permissions2);
+		
+	</script>
+</body>
+</html>
